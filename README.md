@@ -45,4 +45,24 @@ data.debug_mode = true;
 data.subscription_status = "active";
 
 // Return the modified response to the client
-$done({body: JSON.stringify(data)});
+$done({body: JSON.stringify(data)});```
+
+---
+
+### Security Considerations
+
+*   **CA Certificate Risks:** Trusting a third-party certificate authority gives the proxy client visibility into all HTTPS traffic. **Always remove the certificate profile after you have finished your testing.**
+*   **Exposure:** Using proxy tools can expose your local traffic to the proxy provider. Only use reputable, well-audited software.
+*   **Data Handling:** Be cautious when handling sensitive data like authentication tokens or PII (Personally Identifiable Information) during debugging.
+
+---
+
+### Resources & Tools
+
+*   [Egern Documentation](https://egern.app/)
+*   [Shadowrocket Guide](https://shadowrocket.com/)
+*   [Surge Scripting Manual](https://manual.nssurge.com/)
+
+---
+
+*This repository is maintained as a reference for network troubleshooting and API development.*
