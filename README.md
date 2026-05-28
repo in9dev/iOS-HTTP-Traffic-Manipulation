@@ -45,7 +45,8 @@ data.debug_mode = true;
 data.subscription_status = "active";
 
 // Return the modified response to the client
-$done({body: JSON.stringify(data)});```
+$done({body: JSON.stringify(data)});
+```
 
 ---
 
